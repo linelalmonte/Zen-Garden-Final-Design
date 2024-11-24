@@ -1,0 +1,518 @@
+/* Fonts Here */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Variables */
+$primary-color: #9054DE;
+$secondary-color: #B1B5DB;
+$text-color: #333;
+$background-color: #B2DBB1;
+$h2color: #758B48;
+$background-clr:  #000000;
+$borderwhite:#ffffff ;
+$sectioncolor: #D6D6D6;
+$pickdesign: #111010;
+$Primary-font:"Orbitron", sans-serif;
+$Secondary-font: "Roboto", sans-serif;
+
+
+/* Base styling */
+body {
+margin: 0;
+padding: 0;
+background: $background-clr;
+
+p {
+font-family: $Secondary-font;
+font-size: 1rem;
+line-height: 22px;
+}
+
+h1 , h2 {
+font-size: 2.1875rem;
+font-family: $Primary-font;
+
+}
+h3 {
+    font-size: 23px;
+    font-family: $Primary-font;
+    }
+
+h1{
+    color: white; 
+    text-shadow: 
+    0 0 10px rgb(0, 0, 0),   
+    0 0 20px rgba(169, 1, 241, 0.572),   
+    0 0 30px white,   
+    0 0 40px white;   
+}
+h2 {
+    color: white; 
+    text-shadow: 
+    0 0 10px rgb(0, 0, 0),   
+    0 0 40px rgb(0, 0, 0);   
+}
+h2 abbr[title="Cascading Style Sheets"] {
+   
+    text-shadow: 
+        0 0 10px rgb(74, 2, 157),   
+        0 0 20px rgba(169, 1, 241, 0.572),   
+        0 0 30px white,   
+        0 0 40px white;   
+}
+.requirements > p ,.benefits > p {
+    color: $sectioncolor ;
+}
+.requirements > h3 ,.benefits > h3 {
+    color: $secondary-color;
+    border-bottom: 3px solid $secondary-color ;
+    padding-bottom: 20px;
+    width: 300px;
+    text-shadow: 
+    0 0 90px white 
+    
+}
+
+.summary > p {
+    color:$borderwhite;
+    & a {
+     color: $borderwhite;
+    }
+    }
+
+}
+
+* {
+box-sizing: border-box;
+}
+
+#zen-intro {
+    background-image: url('./magical-mystical-landscape-wallpaper-purple-tones.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+}
+
+
+.intro {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width:100%;
+& p{
+    position: relative;
+    left: 10px;
+}
+}
+
+
+header{ 
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    & h1 , h2 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}   
+
+.summary {
+    margin-bottom: 50px;
+    padding-top: 20px;
+    max-width: 610px;
+    text-align: left;
+    &a {
+    text-decoration: underline;
+    color: black;
+    }
+    & a:hover {
+     color:$secondary-color;
+     text-decoration: overline;
+     text-shadow: 
+     0 0 10px rgb(100, 27, 216),  
+0 0 20px rgb(83, 9, 221),  
+0 0 30px white,    
+2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.preamble {
+    width: 100%;
+    background-color: $background-clr;
+    color: white;
+    display: flex;
+    text-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    border-top: 10px solid $borderwhite;
+    & > p {
+    text-align: center;
+    line-height: 5px;
+    color: $sectioncolor;
+
+  
+
+    }
+    & h3 {
+    color: $borderwhite;
+    text-shadow: 
+    0 0 10px rgb(0, 0, 0),   
+    0 0 10px rgba(169, 1, 241, 0.572),   
+    0 0 10px white,   
+    0 0 30px white;   
+    }
+}
+
+.main {
+padding-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto;
+    width: 1400px;
+    margin: 0 auto; 
+
+}
+
+.explanation, .participation {
+    grid-column: 1;
+    border-right: 5px solid $primary-color;
+    border-left: 5px solid $primary-color;
+    position: relative;
+    top: 30px;
+    padding: 60px;
+    &.explanation {
+        border-top: 5px solid $primary-color;
+
+    }
+  & p {
+    color: $secondary-color;
+  }
+  & h3 {
+    color: $borderwhite;
+    text-shadow: 
+    0 0 40px white,    
+    6px 2px 5px rgba(170, 104, 211, 0.9); 
+  }
+  & a {
+    color: $borderwhite;
+  }
+  & a:hover {
+color: $borderwhite;
+text-shadow: 
+0 0 10px rgb(100, 27, 216),   
+0 0 20px rgb(83, 9, 221),   
+0 0 30px white,    
+2px 2px 5px rgba(0, 0, 0, 0.5); 
+text-decoration: overline;
+  }
+}
+
+.participation {
+    border-bottom: 5px solid $primary-color;
+}
+
+.benefits, .requirements {
+    grid-column: 2; 
+    padding-left: 90px;
+    & a {
+        color:$secondary-color
+      
+    }
+    & a:hover {
+        color: $borderwhite;
+        text-shadow: 
+        0 0 10px rgb(100, 27, 216),  
+        0 0 20px rgb(83, 9, 221),   
+        0 0 30px $borderwhite,  
+        2px 2px 5px rgba(0, 0, 0, 0.5); 
+        text-decoration:overline;
+    }
+}
+
+.benefits {
+    grid-row: 1; 
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.requirements {
+    grid-row: 2; 
+}
+
+
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    & a {
+        color: $primary-color;
+        text-decoration: underline;
+        list-style: none;
+    }
+    & a:hover {
+        text-shadow: 
+        0 0 10px rgb(73, 0, 93),   
+        0 0 20px rgba(169, 1, 241, 0.572),   
+        0 0 30px white,   
+        0 0 40px white;   
+        text-decoration: overline;
+    }
+    
+}
+
+.wrapper {
+    background-color: $pickdesign;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1.1px solid $primary-color;
+    padding: 100px;
+    border-radius: 6%;
+    & {
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+}
+
+
+.design-selection , #design-archives , #zen-resources{
+    color: $secondary-color;
+    & ul {
+        list-style: none;
+        line-height: 35px;
+        text-align: start;
+        font-family:  "Roboto", sans-serif;
+    
+    }
+    & a:hover{
+        color: #ffffff;
+        text-decoration: overline;
+    }
+}
+
+
+@keyframes zoomIn {
+    from {
+      transform: scale(0.9); 
+      opacity: 0;          
+    }
+    to {
+      transform: scale(1); 
+      opacity: 1;          
+    }
+  }
+  
+  header ,  .summary , .intro::before{
+    animation: zoomIn 1.5s ease-in-out; 
+    transform-origin: center;         
+    opacity: 1;                       
+  }
+
+  footer {
+    display: flex;
+    justify-content: center; 
+    gap: 60px; 
+    background-color: $primary-color; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%; 
+    text-align: center; 
+    transition: transform 0.3s ease-in-out;
+}
+
+footer a {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 14px; 
+    gap: 20px;
+    width: 50px; 
+   font-family: $Primary-font;
+   font-size: 1.2rem;
+   text-shadow: 
+   0 0 10px rgb(0, 0, 0),   
+   0 0 40px rgb(0, 0, 0);   
+   &:hover {
+    transform: scale(1.4); 
+    text-shadow: 
+    0 0 10px rgb(255, 255, 255),   
+    0 0 20px purple,  
+    0 0 30px white,    
+    2px 2px 5px rgba(0, 0, 0, 0.5); 
+   }
+}
+
+footer a::before {
+    content: "";
+    display: block;
+    width: 34px; 
+    height: 34px; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    
+}
+
+footer a.zen-validate-html::before {
+    background-image: url('./images/html5-brands-solid.svg'); 
+    text-shadow: 
+    0 0 10px rgb(0, 0, 0),   
+    0 0 40px rgb(0, 0, 0);   
+}
+
+footer a.zen-validate-css::before {
+    background-image: url('./images/css3-alt-brands-solid.svg');
+    text-shadow: 
+    0 0 10px rgb(0, 0, 0),   
+    0 0 40px rgb(0, 0, 0);   
+}
+
+footer a.zen-license::before {
+    background-image: url('./images/accessible-icon-brands-solid.svg');
+    text-shadow: 
+    0 0 10px rgb(0, 0, 0),   
+    0 0 40px rgb(0, 0, 0);   
+}
+
+footer a.zen-accessibility::before {
+    background-image: url('./images/closed-captioning-regular.svg');
+    text-shadow: 
+    0 0 10px rgb(0, 0, 0),   
+    0 0 40px rgb(0, 0, 0);   
+}
+
+footer a.zen-github::before {
+    background-image: url('./images/github-brands-solid.svg');
+    text-shadow: 
+    0 0 10px rgb(0, 0, 0),   
+    0 0 40px rgb(0, 0, 0);   
+}
+
+
+/* CSS Media Queries */
+@media (max-width: 735px) {
+    body {
+        p {
+            font-size: 1rem;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2, h3 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .preamble {
+        p {
+
+            line-height: 20px;
+            position: relative;
+            font-size: 14px;
+            padding: 25px;
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        padding: 0 10px; 
+    }
+
+    .benefits, .requirements, .participation, .explanation {
+        width: 100%; 
+        padding: 30px ; 
+        border: none; 
+        text-align: center; 
+    }
+
+    footer {
+        flex-direction: column; 
+        gap: 30px; 
+        padding: 25px;
+        align-items: center;
+    }
+    .wrapper {
+        padding : 1;
+       
+        font-size: 10px;
+        
+    }
+}
+
+@media (max-width: 1465px) {
+      .preamble {
+        p {
+            margin: 0;
+            line-height: 20px;
+            position: relative;
+            font-size: 14px;
+        }
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        padding: 0 10px; 
+    }
+
+    .benefits, .requirements, .participation, .explanation {
+        width: 100%; 
+        padding: 30px ; 
+        border: none; 
+        text-align: center; 
+    }
+
+    footer {
+        flex-direction: column; 
+        gap: 30px; 
+        padding: 25px;
+        align-items: center;
+    }
+    .wrapper {
+        padding : 1;
+       
+        font-size: 10px;
+        
+    }
+    body {
+        p {
+            font-size: 1rem;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2, h3 {
+            font-size: 1.2rem;
+            text-align: center;
+           margin: auto;
+           padding-bottom: 20px;
+        }
+    }
+}
